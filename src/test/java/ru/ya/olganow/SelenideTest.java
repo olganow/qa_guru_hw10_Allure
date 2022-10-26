@@ -33,12 +33,13 @@ public class SelenideTest {
     }
 
     @Test
-    void issueSearch() {
+    void issueSearchForMyRep() {
 
         String repo = "olganow/qa_guru_hw1_gith";
         open("https://github.com/");
         $x("//input[contains(@type,'text')]").setValue(repo).submit();
-        $(byText(repo)).click();
+        $x("//a[contains(@href,'olganow/qa')]").click();
 
         $("#issues-tab").shouldBe(visible);
-    }}
+    }
+}
