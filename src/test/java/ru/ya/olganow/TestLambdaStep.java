@@ -9,7 +9,7 @@ import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.*;
 import static io.qameta.allure.Allure.step;
 
-public class testLambdaStep {
+public class TestLambdaStep {
 
     @BeforeAll
     static void setUp() {
